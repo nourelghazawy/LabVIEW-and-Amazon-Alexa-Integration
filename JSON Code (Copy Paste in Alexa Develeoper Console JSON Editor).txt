@@ -1,0 +1,218 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "robot hand",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "robotfingerpercentage",
+                    "slots": [
+                        {
+                            "name": "state",
+                            "type": "Device_State"
+                        },
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "position",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{state} finger number {number} with {position} percent position"
+                    ]
+                },
+                {
+                    "name": "robotfingerstate",
+                    "slots": [
+                        {
+                            "name": "state",
+                            "type": "Device_State"
+                        },
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{state} finger number {number}"
+                    ]
+                },
+                {
+                    "name": "moveall",
+                    "slots": [
+                        {
+                            "name": "shape",
+                            "type": "shape"
+                        }
+                    ],
+                    "samples": [
+                        "I want robot hand to be {shape}",
+                        "tell robot hand to be {shape}",
+                        "make robot hand {shape}"
+                    ]
+                },
+                {
+                    "name": "shapeletter",
+                    "slots": [
+                        {
+                            "name": "letter",
+                            "type": "letter"
+                        }
+                    ],
+                    "samples": [
+                        "display letter {letter}"
+                    ]
+                },
+                {
+                    "name": "patternword",
+                    "slots": [
+                        {
+                            "name": "word",
+                            "type": "word"
+                        }
+                    ],
+                    "samples": [
+                        "show {word}",
+                        "display {word}",
+                        "say the word {word}"
+                    ]
+                },
+                {
+                    "name": "shapenumber",
+                    "slots": [
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "show number {number}"
+                    ]
+                },
+                {
+                    "name": "patternnumber",
+                    "slots": [
+                        {
+                            "name": "numberone",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "numbertwo",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "numberthree",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "display number {numberone} then number {numbertwo} then number {numberthree}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Device_State",
+                    "values": [
+                        {
+                            "id": "open",
+                            "name": {
+                                "value": "1"
+                            }
+                        },
+                        {
+                            "id": "close",
+                            "name": {
+                                "value": "0"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "shape",
+                    "values": [
+                        {
+                            "id": "happy",
+                            "name": {
+                                "value": "1"
+                            }
+                        },
+                        {
+                            "id": "cool",
+                            "name": {
+                                "value": "0"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "letter",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "i"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "d"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "v"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "b"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "word",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "web"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bulk"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
